@@ -50,8 +50,6 @@ file_menu.add_command(label = "Выход", command = exit)
 
 url = "https://cataas.com/cat"
 
-open_new_window()
-
 window.mainloop()
 
 
