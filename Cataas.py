@@ -6,7 +6,7 @@ from io import BytesIO
 from Scripts.bottle import response
 
 
-def load_image():
+def load_image(url):
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -22,7 +22,8 @@ window = Tk()
 window.title("Cats!")
 window.geometry("600x480")
 
-label = Label().pack()
+label = Label()
+label.pack()
 
 url = "https://cataas.com/cat"
 img = load_image(url)
